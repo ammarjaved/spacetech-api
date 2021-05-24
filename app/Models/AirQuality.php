@@ -11,6 +11,6 @@ class AirQuality extends Model
    // use HasFactory;
     use Notifiable;
     protected $table='air_quality';
-    protected $fillable=['co', 'co2', 'nh3', 'no2', 'o2', 'pm10', 'pm2'];
+    protected $fillable=['loc','co','no2', 'nh3','co2', 'voc', 'pm1', 'pm2', 'pm3', 'pm4', 'pm5', 'pm6', 'pm7'];
 
 }

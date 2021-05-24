@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AirQuality extends Migration
+class Airquality1 extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,6 @@ class AirQuality extends Migration
      */
     public function up()
     {
-        //
         Schema::create('air_quality',function (Blueprint $table){
             $table->increments('id');
             $table->string('loc');
@@ -32,6 +31,7 @@ class AirQuality extends Migration
 
             $table->timestamps();
         });
+
     }
 
     /**
